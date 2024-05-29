@@ -1,3 +1,11 @@
+/*
+---:Important Notes:---
+->HashMap allows one null key and multiple null values.
+    Example:
+            map.put(null, 10);
+            map.put("One", null);
+*/
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
