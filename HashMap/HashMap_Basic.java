@@ -1,3 +1,4 @@
+package HashMap;
 /*
 ---:Important Notes:---
 ->HashMap allows one null key and multiple null values.
