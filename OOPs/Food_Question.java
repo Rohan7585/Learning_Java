@@ -27,6 +27,7 @@ public class Food_Question {
             food[i] = new Food(food_name, food_category, food_netWeight, food_price);
         }
 
+        n.close();
         for(int i=0; i<number; i++){
             System.out.println("Food name: " + food[i].getName());
             System.out.println("Food Category: " + food[i].getCategory());
