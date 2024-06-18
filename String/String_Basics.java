@@ -21,12 +21,12 @@ public class String_Basics {
         //Substrings:
         String substr = str1.substring(7); // Returns "world!"
         String substr2 = str1.substring(7, 12); // Returns "world"
-        System.out.println("\nSubstring from index value of 7: " + substr);
+        System.out.println("\nSubstring from index value of 7: " + substr + "and 2nd substring: " + substr2);
 
         //Concatenation:
         String str3 = str1 + " How are you?"; // Using the + operator
         String str4 = str1.concat(" How are you?"); // Using the concat method
-        System.out.println("\nConcatination: " + str4);
+        System.out.println("\nBasic Concatination: " + str3 + " Concatination using concat(): " + str4);
 
         //Equality:
         boolean isEqual = str1.equals(str2); // Compares the content of strings
