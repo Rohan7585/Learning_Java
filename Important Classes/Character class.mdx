@@ -1,0 +1,76 @@
+# Character Class
+#### The Character class in Java is a wrapper class for the primitive char data type. It provides a wide range of useful static methods for working with characters. The Character class is part of the java.lang package, which is automatically imported in every Java program. This means you don't need to explicitly import the Character class to use it. 
+
+Here are some important methods and functionalities provided by the Character class:
+
+## *1. Character Information*
+  - `isLetter(char ch)`: Checks if the given character is a letter.
+      ```java
+      boolean result = Character.isLetter('a'); // true
+      ```
+  - `isDigit(char ch)`: Checks if the given character is a digit.
+     ```java
+     boolean result = Character.isDigit('1'); // true
+     ```
+  - `isLetterOrDigit(char ch)`: Checks if the given character is a letter or a digit.
+     ```java
+     boolean result = Character.isLetterOrDigit('a'); // true
+     ```
+  - `isWhitespace(char ch)`: Checks if the given character is a whitespace character.
+     ```java
+     boolean result = Character.isWhitespace(' '); // true
+     ```
+  - `isUpperCase(char ch)`: Checks if the given character is an uppercase letter.
+     ```java
+     boolean result = Character.isUpperCase('A'); // true
+     ```
+  - `isLowerCase(char ch)`: Checks if the given character is a lowercase letter.
+     ```java
+     boolean result = Character.isLowerCase('a'); // true
+     ```
+
+## *2. Character Conversion*
+  - `toUpperCase(char ch)`: Converts the given character to uppercase.
+     ```java
+     char upperCase = Character.toUpperCase('a'); // 'A'
+     ```
+  - `toLowerCase(char ch)`: Converts the given character to lowercase.
+     ```java
+     char lowerCase = Character.toLowerCase('A'); // 'a'
+     ```
+
+## *3. Character Type Information*
+  - `isAlphabetic(int codePoint)`: Checks if the given character (Unicode code point) is alphabetic.
+     ```java
+     boolean result = Character.isAlphabetic('a'); // true
+     ```
+  - `isDefined(char ch)`: Checks if the given character is defined in the Unicode.
+     ```java
+     boolean result = Character.isDefined('a'); // true
+     ```
+  - `isIdentifierIgnorable(char ch)`: Determines if the character should be regarded as an ignorable character in a Java identifier or a Unicode identifier.
+     ```java
+     boolean result = Character.isIdentifierIgnorable('\u0000'); // true
+     ```
+
+## *4. Character Numeric Value*
+  - `getNumericValue(char ch)`: Returns the int value that the specified Unicode character represents.
+    ```java
+      int value = Character.getNumericValue('1'); // 1
+    ```
+
+## *5. Character Comparisons*
+  - `compare(char x, char y)`: Compares two char values numerically.
+    ```java
+      int comparison = Character.compare('a', 'b'); // negative value, because 'a' < 'b'
+    ```
+
+## *5. Miscellaneous*
+  - `charCount(int codePoint)`: Determines the number of char values needed to represent the specified character (Unicode code point).
+    ```java
+     int count = Character.charCount(0x1F600); // 2, because 0x1F600 is a surrogate pair
+    ```
+  - `isSurrogate(char ch)`: Determines if the given char value is a Unicode surrogate.
+    ```java
+    boolean result = Character.isSurrogate('\uD800'); // true
+    ```
