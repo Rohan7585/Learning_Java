@@ -1,0 +1,28 @@
+Question 1: Create a class "Employee" with fields id (int), name (String), department (String), and salary (double). Encapsulate these fields. Write two methods: one to calculate the average salary of all employees, and another to check if a given department exists.
+
+Question 2: Create a class "Book" with fields isbn (String), title (String), author (String), and price (double). Encapsulate these fields. Write two methods: one to find the book with the highest price, and another to verify if a given ISBN exists in the collection.
+
+Question 3: Create a class "Product" with fields productId (int), productName (String), category (String), and stock (int). Encapsulate these fields. Write two methods: one to find the product with the lowest stock, and another to check if a given product name is in the list.
+
+Question 4: Create a class "Course" with fields courseId (int), courseName (String), instructor (String), and duration (int). Encapsulate these fields. Write two methods: one to find the course with the longest duration, and another to validate if a given instructor is teaching any course.
+
+Question 5: Create a class "Car" with fields modelNumber (int), modelName (String), manufacturer (String), and price (double). Encapsulate these fields. Write two methods: one to calculate the average price of all cars, and another to check if a given model number exists.
+
+Question 6: Create a class "Flight" with fields flightNumber (String), airline (String), source (String), and destination (String). Encapsulate these fields. Write two methods: one to count how many flights are going to a specific destination, and another to validate if a given flight number is available.
+
+Question 7: Create a class "Customer" with fields customerId (int), customerName (String), address (String), and purchaseAmount (double). Encapsulate these fields. Write two methods: one to find the customer with the highest purchase amount, and another to check if a given customer ID exists.
+
+Question 8: Create a class "LibraryMember" with fields memberId (int), memberName (String), membershipType (String), and booksIssued (int). Encapsulate these fields. Write two methods: one to find the member with the maximum number of books issued, and another to validate if a given member ID exists.
+
+Advance Questions:-
+9. Student Class with Fallback Logic
+Question 2: Create a class "Student" with fields id (int), name (String), grade (double), and subject (String). Encapsulate these fields. Write two methods: one to find the student with the lowest grade and return their name. If no students exist, return "No students enrolled". The second method should check if a student exists with a given id, and if not, create and return a new Student object with default values.
+
+10. Product Class with Conditional Calculations
+Question 3: Create a class "Product" with fields productId (int), productName (String), category (String), and price (double). Encapsulate these fields. Write two methods: one to calculate the total price of all products in a given category. If the category doesn’t exist, return -1. The second method should return the product with the highest price in the list, but if there are no products, it should return null.
+
+11. LibraryMember Class with Default Handling
+Question 4: Create a class "LibraryMember" with fields memberId (int), memberName (String), membershipType (String), and booksIssued (int). Encapsulate these fields. Write two methods: one to find the member with the most books issued. If no members exist, return a LibraryMember object with a memberId of -1 and a memberName of "No Members". The second method should check if a membership type exists, and if not, create a new membership type and return its name.
+
+12. Course Class with Conditional Fallbacks
+Question 5: Create a class "Course" with fields courseId (int), courseName (String), instructor (String), and duration (int). Encapsulate these fields. Write two methods: one to return the course with the shortest duration. If no courses exist, return a message "No courses available". The second method should check if a course exists with a given name. If not, return a default course object with the name "Unknown".

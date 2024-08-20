@@ -8,9 +8,9 @@ class Node {
     }
 }
 
-public class LinkedList {
+class LinkedList1 {
     private Node head;
-    public LinkedList() {
+    public LinkedList1() {
         this.head = null;
     }
     public void insertAtBeginning(int data) {
@@ -27,7 +27,7 @@ public class LinkedList {
         System.out.println();
     }
     public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
+        LinkedList1 linkedList = new LinkedList1();
         linkedList.insertAtBeginning(3);
         linkedList.insertAtBeginning(5);
         linkedList.insertAtBeginning(7);
