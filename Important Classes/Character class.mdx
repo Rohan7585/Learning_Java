@@ -16,6 +16,11 @@ Here are some important methods and functionalities provided by the Character cl
      ```java
      boolean result = Character.isLetterOrDigit('a'); // true
      ```
+  - `isDefined(char ch)`: Returns true if the specified character is a defined character, false otherwise.
+     ```java
+     char ch = '\u0000'; // Null character
+     boolean isDefined = Character.isDefined(ch); // false
+     ```
   - `isWhitespace(char ch)`: Checks if the given character is a whitespace character.
      ```java
      boolean result = Character.isWhitespace(' '); // true
