@@ -1,0 +1,88 @@
+# Arrays Class
+#### This class contains various methods for manipulating arrays (such as sorting and searching). This class also contains a static factory that allows arrays to be viewed as lists.
+
+### java.util.Arrays
+#### This class is a member of the Java Collections Framework.
+
+## *1. Sorting*
+  - `sort(int[] a)`: Sorts the specified array of integers into ascending numerical order.
+     ```java
+     int[] numbers = {5, 2, 8, 1, 9};
+     Arrays.sort(numbers);  // [1, 2, 5, 8, 9]
+     ```
+  - `sort(int[] a, int fromIndex, int toIndex)`: Sorts the specified portion of the given array of integers into ascending numerical order.
+    .
+     ```java
+     int[] numbers = {5, 2, 8, 1, 9};
+     Arrays.sort(numbers, 1, 4);   // [5, 1, 2, 8, 9]
+     ```
+
+## *2. Searching*
+  - `binarySearch(int[] a, int key))`: Searches the specified sorted array of integers for the specified int value using the binary search algorithm.
+     ```java
+     int[] numbers = {1, 2, 5, 8, 9};
+     int index = Arrays.binarySearch(numbers, 5);  // 2
+     ```
+  - `binarySearch(int[] a, int fromIndex, int toIndex, int key)`: Searches the specified sorted portion of the given array of integers for the specified int value using the binary search algorithm.
+    .
+     ```java
+     int[] numbers = {1, 2, 5, 8, 9};
+     int index2 = Arrays.binarySearch(numbers, 2, 4, 3);  // Index of 3: -3
+     ```
+
+## *3. Copying*
+  - `copyOf(int[] original, int newLength)`: Returns a copy of the specified array of integers.
+     ```java
+     int[] original = {1, 2, 3};
+     int[] copy = Arrays.copyOf(original, original.length);
+     System.out.println(Arrays.toString(copy)); // [1, 2, 3]
+     ```
+  - `copyOf(int[] original, int from, int to)`: Returns a copy of the specified range of the original array of integers.
+    .
+     ```java
+     int[] original = {1, 2, 3, 4, 5};
+     int[] copy = Arrays.copyOfRange(original, 1, 4);
+     System.out.println(Arrays.toString(copy)); // [2, 3, 4]
+     ```
+
+## *4. Filling*
+  - `fill(int[] a, int val)`: Fills the specified array of integers with the specified value.
+     ```java
+     int[] numbers = new int[5];
+     Arrays.fill(numbers, 10);
+     System.out.println(Arrays.toString(numbers)); // [10, 10, 10, 10, 10]
+     ```
+  - `fill(int[] a, int fromIndex, int toIndex, int val)`: Fills the specified range of the given array of integers with the specified value.
+    .
+     ```java
+     int[] numbers = {1, 2, 3, 4, 5};
+     Arrays.fill(numbers, 2, 4, 0);
+     System.out.println(Arrays.toString(numbers)); // [1, 0, 0, 4, 5]
+     ```
+
+## *5. Equality*
+  - `equals(Object[] a, Object[] b)`: Returns `true` if two arrays are equal, `false` otherwise.
+     ```java
+     int[] array1 = {1, 2, 3};
+     int[] array2 = {1, 2, 3};
+     boolean equal = Arrays.equals(array1, array2);
+     System.out.println(equal); // true
+     ```
+
+      ## *6. Miscellaneous*
+  - `asList(T... a)`: Returns a fixed-size list backed by the specified array.
+     ```java
+     int[] numbers = {1, 2, 3};
+     List<Integer> list = Arrays.asList(numbers);
+     System.out.println(list); // [1, 2, 3]
+     ```
+  - `toString(Object[] a)`:  Returns a string representation of the specified array.
+    ```java
+     int[] numbers = {1, 2, 3};
+     String str = Arrays.toString(numbers);
+     System.out.println(str); // Output: [1, 2, 3]
+    ```
+  - `hashCode(Object[] a)`: Returns a hash code for the specified array.
+  - `deepEquals(Object[] a, Object[] b)`: Returns `true` if two arrays are deeply equal, `false` otherwise.
+  - `deepHashCode(Object[] a)`: Returns a hash code for the specified array, including the hash codes of its elements.
+  - `deepToString(Object[] a)`: Returns a string representation of the specified array, including the string representations of its elements.
