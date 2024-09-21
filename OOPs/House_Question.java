@@ -2,7 +2,7 @@
 //Question: You have to create a class "House" with houseId(int), houseAddres(String), hosuePin(int), housePrice(double) and you have to encapsulate these. Now you have to create 2 method to find the average price of given house address and search a house details with a given house pin.
 import java.util.*;
 
-public class Solution {
+public class House_Question {
     public static void main(String args[]) throws Exception {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();  //How many object you want to create
@@ -35,6 +35,7 @@ public class Solution {
             System.out.println("Address: " + searchedPin.getHouseAddress());
             System.out.println("Price: " + searchedPin.getHousePrice());
         }
+        sc.close();
     }
 
   //First Method

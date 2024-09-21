@@ -1,18 +1,26 @@
-Question 1: Create a class "Employee" with fields id (int), name (String), department (String), and salary (double). Encapsulate these fields. Write two methods: one to calculate the average salary of all employees, and another to check if a given department exists.
+Question 1: 
+Create a class "Employee" with fields id (int), name (String), department (String), and salary (double). Encapsulate these fields. Write two methods: one to calculate the average salary of all employees, and another to check if a given department exists.
 
-Question 2: Create a class "Book" with fields isbn (String), title (String), author (String), and price (double). Encapsulate these fields. Write two methods: one to find the book with the highest price, and another to verify if a given ISBN exists in the collection.
+Question 2: 
+Create a class "Book" with fields isbn (String), title (String), author (String), and price (double). Encapsulate these fields. Write two methods: one to find the book with the highest price, and another to verify if a given ISBN exists in the collection.
 
-Question 3: Create a class "Product" with fields productId (int), productName (String), category (String), and stock (int). Encapsulate these fields. Write two methods: one to find the product with the lowest stock, and another to check if a given product name is in the list.
+Question 3: 
+Create a class "Product" with fields productId (int), productName (String), category (String), and stock (int). Encapsulate these fields. Write two methods: one to find the product with the lowest stock, and another to check if a given product name is in the list.
 
-Question 4: Create a class "Course" with fields courseId (int), courseName (String), instructor (String), and duration (int). Encapsulate these fields. Write two methods: one to find the course with the longest duration, and another to validate if a given instructor is teaching any course.
+Question 4: 
+Create a class "Course" with fields courseId (int), courseName (String), instructor (String), and duration (int). Encapsulate these fields. Write two methods: one to find the course with the longest duration, and another to validate if a given instructor is teaching any course.
 
-Question 5: Create a class "Car" with fields modelNumber (int), modelName (String), manufacturer (String), and price (double). Encapsulate these fields. Write two methods: one to calculate the average price of all cars, and another to check if a given model number exists.
+Question 5: 
+Create a class "Car" with fields modelNumber (int), modelName (String), manufacturer (String), and price (double). Encapsulate these fields. Write two methods: one to calculate the average price of all cars, and another to check if a given model number exists.
 
-Question 6: Create a class "Flight" with fields flightNumber (String), airline (String), source (String), and destination (String). Encapsulate these fields. Write two methods: one to count how many flights are going to a specific destination, and another to validate if a given flight number is available.
+Question 6: 
+Create a class "Flight" with fields flightNumber (String), airline (String), source (String), and destination (String). Encapsulate these fields. Write two methods: one to count how many flights are going to a specific destination, and another to validate if a given flight number is available.
 
-Question 7: Create a class "Customer" with fields customerId (int), customerName (String), address (String), and purchaseAmount (double). Encapsulate these fields. Write two methods: one to find the customer with the highest purchase amount, and another to check if a given customer ID exists.
+Question 7: 
+Create a class "Customer" with fields customerId (int), customerName (String), address (String), and purchaseAmount (double). Encapsulate these fields. Write two methods: one to find the customer with the highest purchase amount, and another to check if a given customer ID exists.
 
-Question 8: Create a class "LibraryMember" with fields memberId (int), memberName (String), membershipType (String), and booksIssued (int). Encapsulate these fields. Write two methods: one to find the member with the maximum number of books issued, and another to validate if a given member ID exists.
+Question 8: 
+Create a class "LibraryMember" with fields memberId (int), memberName (String), membershipType (String), and booksIssued (int). Encapsulate these fields. Write two methods: one to find the member with the maximum number of books issued, and another to validate if a given member ID exists.
 
 Advance Questions:-
 9. Student Class with Fallback Logic
