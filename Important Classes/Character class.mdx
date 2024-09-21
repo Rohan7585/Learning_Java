@@ -1,6 +1,7 @@
 # Character Class
 #### The Character class in Java is a wrapper class for the primitive char data type. It provides a wide range of useful static methods for working with characters. The Character class is part of the java.lang package, which is automatically imported in every Java program. This means you don't need to explicitly import the Character class to use it. 
-
+### java.lang.Character
+#### The `Character` class is part of the `java.lang` package. This means you don't need to explicitly import it in most cases, as it is automatically imported by the Java compiler.
 Here are some important methods and functionalities provided by the Character class:
 
 ## *1. Character Information*
@@ -15,6 +16,11 @@ Here are some important methods and functionalities provided by the Character cl
   - `isLetterOrDigit(char ch)`: Checks if the given character is a letter or a digit.
      ```java
      boolean result = Character.isLetterOrDigit('a'); // true
+     ```
+  - `isDefined(char ch)`: Returns true if the specified character is a defined character, false otherwise.
+     ```java
+     char ch = '\u0000'; // Null character
+     boolean isDefined = Character.isDefined(ch); // false
      ```
   - `isWhitespace(char ch)`: Checks if the given character is a whitespace character.
      ```java
