@@ -12,6 +12,13 @@ public class Main {
         list1.display();
         list1.InsertAtTheBeginning(90);
         list1.display();
-        System.out.println(list1.SearchByPosition(0));
+        //System.out.println(list1.SearchByPosition(0));
+        //list1.UpdateValue(8, 999);
+        //list1.CountLength();
+        //list1.DeleteLastNode();
+        // list1.display();
+        // list1.DeleteGivenNode(5);
+        list1.display();
+        
     }
 }

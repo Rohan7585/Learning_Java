@@ -3,6 +3,10 @@ package FromScratch;
 public class LinkedList {
     Node head;
     
+
+/*=======================
+Traverse The Linked List
+========================*/
     public void display(){
         if(head == null)    System.out.println("The Linked List is empty.");
         else{
@@ -15,6 +19,10 @@ public class LinkedList {
         }
     }
 
+
+/*=======================
+Insert value in the Linked List
+========================*/
     public void add(int data){
         Node newNode = new Node(data);
         if(head == null)    head = newNode;
@@ -57,22 +65,71 @@ public class LinkedList {
         }   
     }
 
+
+/*=======================
+Delete Node from the Linked List
+========================*/
     public void DeleteFirstNode(){
-        
+        if(head == null)    System.out.println("The Linked List is empty.");
+        else if(head.next == null)  head = null;
+        else{
+            head = head.next;
+        }  
     }
 
     public void DeleteLastNode(){
-
+        if(head == null)    System.out.println("The Linked List is empty.");
+        else if(head.next == null)  head = null;
+        else{
+            Node prevNode = head;
+            Node current = head.next;
+            while(current.next!=null){
+                prevNode = current;
+                current = current.next;
+            }
+            prevNode.next = null;
+        } 
     }
 
     public void DeleteGivenNode(int position){
-        
+        if(head == null)    System.out.println("The Linked List is empty.");
+        else if(position == 1)  head = head.next;
+        else{
+            Node prevNode = head;
+            Node current = head.next;
+            int count = 2;
+            while(current.next!=null && count<position){
+                prevNode = current;
+                current = current.next;
+                count++;
+            }
+            if(count == position)   prevNode.next = current.next;
+            else   System.out.println("Enterd position isn't valid");
+        }
     }
 
     public void DeleteByValue(int value){
-
+        if(head == null)    System.out.println("The Linked List is empty.");
+        else if ( head.data == value)   head = head.next;
+        else{
+            Node prev = head;
+            Node temp = head.next;
+            while(temp != null){
+                if(temp.data == value){
+                    break;
+                }
+                prev = temp;
+                temp = temp.next;
+            }
+            if(temp == null)    System.out.println("Entered value isn't valid");
+            else    prev.next = temp.next;
+        } 
     }
 
+
+/*=======================
+Search Value from the Linked List
+========================*/
     public int SearchByValue(int value){
         int count = -1;
         if(head == null)    System.out.println("The Linked List is empty.");
@@ -104,5 +161,41 @@ public class LinkedList {
         if(count == position) return temp.data;
         else    System.out.println("Entered position isn't a valid position");
         return -1;
+    }
+
+
+/*=======================
+Update Value of a node
+========================*/
+    public void UpdateValue(int position, int data){
+        Node current = head;
+        if(head == null)    System.out.println("The linked List empty");
+        else{
+            int count = 1;
+            while(count<position && current!=null){
+                current = current.next;
+                count++;
+            }
+            if(count == position && current != null)   current.data = data;
+            else    System.out.println("Entered position isn't valied");
+        }
+    }
+
+
+/*=======================
+Count the nodes (length)
+========================*/
+    public int CountLength(){
+        int length = 0;
+        if(head == null)    System.out.println("The Linked List is empty");
+        else{
+            Node current = head;
+            while(current!=null){
+                length++;
+                current = current.next;
+            }
+            System.out.print("The length of this Linked List is " + length);
+        }
+        return length;
     }
 }
