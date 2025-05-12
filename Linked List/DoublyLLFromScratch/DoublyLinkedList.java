@@ -7,7 +7,11 @@ public class DoublyLinkedList {
 Traverse The Linked List
 ========================*/
     public void display(){
-
+        Node current = head;
+        while (current.next != null) {
+            System.out.print(current.data + " -> ");
+        }
+        System.out.print("null \n");
     }
     
 
@@ -15,11 +19,26 @@ Traverse The Linked List
 Insert value in the Linked List
 ========================*/
     public void add(int data){
-
+        Node newNode = new Node(data);
+        if(head == null)    head = newNode;
+        else{
+            Node current = head;
+            while(current.next != null){
+                current = current.next;
+            }
+            current.next = newNode;
+            newNode.prev = current;
+        }
     }
 
     public void InsertAtTheBeginning(int data){
-
+        Node newNode = new Node(data);
+        if(head == null)    head = newNode;
+        else{
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }
     }
 
     public void InsertAtGivenPosition(int data, int position){
