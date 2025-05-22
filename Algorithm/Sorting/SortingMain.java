@@ -18,6 +18,8 @@ public class SortingMain {
         InsertionSort.insertionSort(arr2);
         System.out.println("\nInsertion Sort on arr2 = " + Arrays.toString(arr2));
         SelectionSort.selectionSort(arr3);
-        System.out.println("\nInsertion Sort on arr3 = " + Arrays.toString(arr3));
+        System.out.println("\nSelection Sort on arr3 = " + Arrays.toString(arr3));
+        MergeSort.mergeSort(arr4);
+        System.out.println("\nMerge Sort on arr4 = " + Arrays.toString(arr4));
     }
 }
