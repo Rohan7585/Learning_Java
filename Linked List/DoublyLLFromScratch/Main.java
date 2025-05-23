@@ -6,6 +6,7 @@ public class Main {
         dll.add(10);
         dll.add(20);
         dll.add(30);
+        dll.InsertAtTheBeginning(05);
         dll.display();
     }
 }

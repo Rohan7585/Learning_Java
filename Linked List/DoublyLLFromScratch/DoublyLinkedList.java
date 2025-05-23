@@ -1,17 +1,28 @@
 package DoublyLLFromScratch;
 
+import DoublyLLFromScratch.Node;
+
 public class DoublyLinkedList {
-    Node head;
+    Node head = null;
 
 /*=======================
 Traverse The Linked List
 ========================*/
     public void display(){
         Node current = head;
-        while (current.next != null) {
+        Node previous = null;
+        while (current != null) {
             System.out.print(current.data + " -> ");
+            previous = current;
+            current = current.next;
         }
         System.out.print("null \n");
+        System.out.print("null");
+        while (previous != null) {
+            System.out.print(" <- " + previous.data);
+            previous = previous.prev;
+        }
+        System.out.println();
     }
     
 
