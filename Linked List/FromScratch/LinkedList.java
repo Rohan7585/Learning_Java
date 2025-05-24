@@ -47,7 +47,11 @@ Insert value in the Linked List
     public void InsertAtGivenPosition(int data, int position){
         Node newNode = new Node(data);
         if(position == 0)    System.out.println("Position can't be 0");
-        else if(head == null || position == 1)    head = newNode;
+        else if(head == null && position == 1)    head = newNode;
+        else if(head != null && position == 1){
+            newNode.next = head;
+            head = newNode;
+        }
         else{
             Node previousNode = head;
             Node temp = head.next;

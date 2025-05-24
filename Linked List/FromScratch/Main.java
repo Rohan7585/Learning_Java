@@ -10,6 +10,8 @@ public class Main {
         list1.add(20);
         list1.add(10);
         list1.display();
+        list1.InsertAtGivenPosition(44, 5);
+        list1.display();
         //list1.InsertAtTheBeginning(90);
         //list1.display();
         //System.out.println(list1.SearchByPosition(0));
