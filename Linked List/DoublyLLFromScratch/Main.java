@@ -8,5 +8,7 @@ public class Main {
         dll.add(30);
         dll.InsertAtTheBeginning(05);
         dll.display();
+        dll.InsertAtGivenPosition(50, 1);
+        dll.display();
     }
 }

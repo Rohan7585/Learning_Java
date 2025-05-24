@@ -1,7 +1,5 @@
 package DoublyLLFromScratch;
 
-import DoublyLLFromScratch.Node;
-
 public class DoublyLinkedList {
     Node head = null;
 
@@ -53,7 +51,34 @@ Insert value in the Linked List
     }
 
     public void InsertAtGivenPosition(int data, int position){
-
+        Node newNode = new Node(data);
+        if(position == 0)    System.out.println("Position can't be 0");
+        else if(head == null && position == 1)    head = newNode;
+        else if(head != null && position == 1){
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }    
+        else{
+            Node previousNode = head;
+            Node temp = head.next;
+            while(position>2 && temp!=null){
+                previousNode = temp;
+                temp = temp.next;
+                position--;
+            }
+            if(position==2 && temp == null){
+                previousNode.next = newNode;
+                newNode.prev = previousNode;
+            }
+            else if(position>2 && temp==null)    System.out.println("Entered positionition is an invalid positionition.");
+            else{
+                previousNode.next = newNode;
+                newNode.prev = previousNode;
+                newNode.next = temp;
+                temp.prev = newNode;
+            }
+        }
     }
 
 
