@@ -86,11 +86,25 @@ Insert value in the Linked List
 Delete Node from the Linked List
 ========================*/
     public void DeleteFirstNode(){
-
+        if(head == null)    System.out.println("This Doubly LinkedList is empty");
+        else{
+            head = head.next;
+            head.prev = null;
+        }
     }
 
     public void DeleteLastNode(){
-
+        if(head == null)    System.out.println("This Doubly LinkedList is empty");
+        else{
+            Node currNode = head.next;
+            Node previousNode = head;
+            while(currNode.next != null){
+                previousNode = currNode;
+                currNode = currNode.next;
+            }
+            previousNode.next = null;
+            currNode.prev = null;
+        }
     }
 
     public void DeleteGivenNode(int position){

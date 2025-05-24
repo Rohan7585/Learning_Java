@@ -9,6 +9,7 @@ public class Main {
         dll.InsertAtTheBeginning(05);
         dll.display();
         dll.InsertAtGivenPosition(50, 1);
+        dll.DeleteLastNode();
         dll.display();
     }
 }
