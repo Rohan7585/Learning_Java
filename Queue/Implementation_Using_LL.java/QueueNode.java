@@ -1,10 +1,10 @@
-package Queue.ImplementationUsingLL;
+package Queue.Implementation_Using_LL;
 public class QueueNode {
     int data;
-    QueueNode node;
+    QueueNode next;
 
     public QueueNode(int data){
         this.data = data;
-        node =  null;
+        next =  null;
     }
 }
